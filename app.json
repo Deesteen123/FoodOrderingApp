@@ -1,40 +1,41 @@
 {
   "expo": {
-    "name": "FoodOrdering",
-    "slug": "FoodOrdering",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "name": "FoodOrdering", // Name of your Expo project
+    "slug": "FoodOrdering", // Unique slug for your project
+    "version": "1.0.0", // Version number of your project
+    "orientation": "portrait", // Default orientation of the app
+    "icon": "./assets/images/icon.png", // Path to the app icon image
+    "scheme": "myapp", // Custom URL scheme for deep linking
+    "userInterfaceStyle": "automatic", // Default UI style (light/dark) based on device settings
+    "splash": { // Splash screen configuration
+      "image": "./assets/images/splash.png", // Path to the splash screen image
+      "resizeMode": "contain", // How splash image should be resized
+      "backgroundColor": "#ffffff" // Background color of the splash screen
     },
-    "assetBundlePatterns": [
+    "assetBundlePatterns": [ // Patterns to include in asset bundling
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "ios": { // iOS specific configuration
+      "supportsTablet": true // Indicates if the app supports tablet devices
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "android": { // Android specific configuration
+      "adaptiveIcon": { // Configuration for adaptive icons
+        "foregroundImage": "./assets/images/adaptive-icon.png", // Path to the adaptive icon foreground image
+        "backgroundColor": "#ffffff" // Background color of the adaptive icon
       }
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+    "web": { // Web specific configuration
+      "bundler": "metro", // Bundler to use for web
+      "output": "static", // Output directory for web build
+      "favicon": "./assets/images/favicon.png" //favicon image for web
     },
-    "plugins": [
-      "expo-router"
+    "plugins": [ // List of plugins used in the project
+      "expo-router" // Using Expo Router plugin
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "tsconfigPaths": true
+    "experiments": { // Experimental features
+      "typedRoutes": true, // Typed routes enabled
+      "tsconfigPaths": true // tsconfig enabled
     }
   }
 }
+
