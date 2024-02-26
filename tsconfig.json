@@ -1,18 +1,20 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "expo/tsconfig.base", // Extending the base TypeScript configuration provided by Expo
+
   "compilerOptions": {
-    "strict": true,
-    "baseUrl": ".",
+    "strict": true, // Enables strict type-checking options
+    "baseUrl": ".", // Base directory to resolve non-relative module names
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["assets/*"]
+      "@/*": ["src/*"], // Alias for paths starting with "@" to resolve from the "src" directory
+      "@components/*": ["src/components/*"], // Alias for component paths within the "src/components" directory
+      "@assets/*": ["assets/*"] // Alias for asset paths within the "assets" directory
     }
   },
+
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "**/*.ts", // Include TypeScript files
+    "**/*.tsx", // Include TypeScript React files
+    ".expo/types/**/*.ts", // Include TypeScript files in the Expo types directory
+    "expo-env.d.ts" // Include the Expo environment declaration file
   ]
 }
